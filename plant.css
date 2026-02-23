@@ -1,0 +1,156 @@
+/* Google Font Feel (fallback safe) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(180deg, #eef7f1, #ffffff);
+    color: #1b5e20;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #1b5e20, #43a047);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 46px;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    margin-top: 12px;
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+/* Section Base */
+section {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: #66bb6a;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+
+/* About Section */
+.about {
+    
+    background: url("Нарисованная рукой иллюстрация ботанического сада _ Бесплатный вектор.jpeg")
+                    center/cover;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 260px;
+
+    text-align: center;
+}
+
+.about p {
+    max-width: 720px;
+    margin: auto;
+    font-size: 19px;
+    line-height: 1.9;
+    color: #2e7d32;
+}
+
+/* Plants Section Background */
+.plants {
+    background: #f4fbf6;
+    padding: 70px 20px;
+    border-radius: 35px;
+}
+
+/* Plant Cards Layout */
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 35px;
+    align-items: stretch;
+}
+
+/* Individual Plant Card */
+.plant {
+    background: white;
+    border-radius: 25px;
+    padding: 40px 25px;
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+}
+
+/* Decorative Leaf */
+.plant::before {
+    content: "🌿";
+    position: absolute;
+    font-size: 80px;
+    top: -25px;
+    right: -25px;
+    opacity: 0.12;
+}
+
+/* Hover Effect */
+.plant:hover {
+    transform: translateY(-15px) scale(1.06);
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(120deg, #1b5e20, #2e7d32);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 80px;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .plant {
+        font-size: 19px;
+    }
+}
